@@ -30,11 +30,11 @@ public class Order {
                 System.out.println();
                 System.out.println("DRINKS:");
 
-                for (int i = 0; i < drinkMenu.size(); i++) {
+                for (int j = 0; j < drinkMenu.size(); j++) {
                     itemNumber++;
                     System.out.print(itemNumber + ".");
-                    drinkMenu.get(i).type();
-                    System.out.println("Price: $" + drinkMenu.get(i).getPrice());
+                    drinkMenu.get(j).type();
+                    System.out.println("Price: $" + drinkMenu.get(j).getPrice());
                     System.out.println();
                 }
                 boolean ordering = true;
@@ -77,28 +77,28 @@ public class Order {
                 System.out.println(order.get(1));
                 Double subTotal = 0.0;
 
-                for (int i = 2; i < order.size(); i++) {
-                    if (order.get(i).equals(cupcakeMenu.get(0))) {
+                for (int k = 2; k < order.size(); k++) {
+                    if (order.get(k).equals(cupcakeMenu.get(0))) {
                         cupcakeMenu.get(0).type();
                         System.out.println(cupcakeMenu.get(0).getPrice());
                         subTotal = subTotal + cupcakeMenu.get(0).getPrice();
-                    } else if (order.get(i).equals(cupcakeMenu.get(1))) {
+                    } else if (order.get(k).equals(cupcakeMenu.get(1))) {
                         cupcakeMenu.get(1).type();
                         System.out.println(cupcakeMenu.get(1).getPrice());
                         subTotal = subTotal + cupcakeMenu.get(1).getPrice();
-                    } else if (order.get(i).equals(cupcakeMenu.get(2))) {
+                    } else if (order.get(k).equals(cupcakeMenu.get(2))) {
                         cupcakeMenu.get(2).type();
                         System.out.println(cupcakeMenu.get(2).getPrice());
                         subTotal = subTotal + cupcakeMenu.get(2).getPrice();
-                    } else if (order.get(i).equals(drinkMenu.get(0))) {
+                    } else if (order.get(k).equals(drinkMenu.get(0))) {
                         drinkMenu.get(0).type();
                         System.out.println(drinkMenu.get(0).getPrice());
                         subTotal = subTotal + drinkMenu.get(0).getPrice();
-                    } else if (order.get(i).equals(drinkMenu.get(1))) {
+                    } else if (order.get(k).equals(drinkMenu.get(1))) {
                         drinkMenu.get(1).type();
                         System.out.println(drinkMenu.get(1).getPrice());
                         subTotal = subTotal + drinkMenu.get(1).getPrice();
-                    } else if (order.get(i).equals(drinkMenu.get(2))) {
+                    } else if (order.get(k).equals(drinkMenu.get(2))) {
                         drinkMenu.get(2).type();
                         System.out.println(drinkMenu.get(2).getPrice());
                         subTotal = subTotal + drinkMenu.get(2).getPrice();
